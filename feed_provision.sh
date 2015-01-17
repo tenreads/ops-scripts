@@ -26,7 +26,7 @@ function setupCron() {
 function startPull {
     cleanupSystem
     #nohup python /root/feedpuller/puller.py > /root/latest-pull.log 2>&1&
-    nohup python /root/python-node-feedpuller/feed_puller.py > /root/latest-pull.log 2>&1&
+    nohup python /root/python-node-feedpuller/feed_parser.py > /root/latest-pull.log 2>&1&
 }
 
 startPull
