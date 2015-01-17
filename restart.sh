@@ -1,5 +1,5 @@
 function restart() {
-    process=`ps aux|grep "parser.py"|awk '{print $2}'`
+    process=`ps aux|grep "[p]arser"|awk '{print $2}'`
     if [[ ${#process} -ne 0 ]]
     then
         kill $process
